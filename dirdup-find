@@ -183,7 +183,7 @@ def main(argv):
 	   help='finds files, directories, dupfiles, or dupdirectories (default: files)'
 	)
 	parser.add_argument('storages', default=['@ALL'], nargs='*',
-	   help='what storages to process (or @ALL or @LOCAL)'
+	   help='what storages to process (or @ALL or @LOCAL)', choices=['@ALL', '@LOCAL']
 	)
 
 	args = parser.parse_args()
